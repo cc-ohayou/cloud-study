@@ -23,6 +23,6 @@ eureka:
   client:
     serviceUrl:
 #      defaultZone: http://discovery:8761/eureka/,http://discovery:8762/eureka/   # 指定注册中心的地址 集群
-      defaultZone: http://discovery:8761/eureka/   # 指定注册中心的地址
+      defaultZone: http://discovery:8760/eureka/   # 指定注册中心的地址
   instance:
     preferIpAddress: true

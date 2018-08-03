@@ -1,0 +1,26 @@
+my:
+ name: cc
+ age:  28
+ number: ${random.int}
+ uuid: ${random.uuid}
+ max: ${random.int(10)}
+ value: ${random.value}
+ greeting: hi,i'm ${my.name}
+server:
+  port: 8750
+management:
+  security:
+    enabled: false
+  server:
+    port: 9001
+  endpoints:
+      web:
+        exposure:
+          include: '*'
+          exclude: env
+
+
+
+
+
+
