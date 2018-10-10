@@ -7,6 +7,7 @@ import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -32,8 +33,6 @@ public class UserController {
   @GetMapping("/{id}")
   public User findById(@PathVariable Long id) {
     User findOne =userRepository.findById(id).get();
-//    Example<User>  userExample=;
-//    User two =userRepository.findOne(userExample);
     return findOne;
   }
 
@@ -44,5 +43,10 @@ public class UserController {
   @GetMapping("/instance-info")
   public ServiceInstance showInfo() {
     return this.discoveryClient.getInstances("provider-user").get(0);
+  }
+
+  @RequestMapping("/hello")
+  public String hello(String word){
+    return  "welcome to user servie "+word;
   }
 }

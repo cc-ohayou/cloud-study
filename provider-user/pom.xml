@@ -10,6 +10,7 @@
 	<description>Demo project for Spring Boot</description>
 
 
+
 	<parent>
 		<groupId>com.study</groupId>
 		<artifactId>cloud-study</artifactId>
@@ -31,6 +32,12 @@
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.study</groupId>
+			<artifactId>swagger</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>
