@@ -47,6 +47,6 @@ public class UserController {
 
   @RequestMapping("/hello")
   public String hello(String word){
-    return  "welcome to user servie "+word;
+    return  "welcome to user service "+word;
   }
 }

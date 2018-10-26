@@ -14,7 +14,7 @@
 	<modules>
 		<module>discovery-eureka</module>
 		<module>provider-user</module>
-
+        <module>swagger</module>
 	</modules>
 
 	<parent>
@@ -58,6 +58,8 @@
 			<artifactId>lombok</artifactId>
 			<version>1.16.10</version>
 		</dependency>
+
+		<!-- swagger-->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
