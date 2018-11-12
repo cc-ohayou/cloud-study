@@ -3,12 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.study</groupId>
-	<artifactId>eureka-consumer</artifactId>
+	<artifactId>eureka-consumer-ribbon</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>eureka-consumer</name>
+	<name>eureka-consumer-ribbon</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
