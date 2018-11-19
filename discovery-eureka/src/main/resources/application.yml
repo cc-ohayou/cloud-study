@@ -1,5 +1,5 @@
 server:
-  port: 8760                    # 指定该Eureka实例的端口
+  port: 8761                    # 指定该Eureka实例的端口
 
 eureka:
   instance:
@@ -9,7 +9,7 @@ eureka:
      # 单机时不开启 设为false
     registerWithEureka: false
     # eureka.client.fetchRegistry ：表示是否从Eureka Server获取注册信息，默认为true。因为这是一个单点的Eureka Server，
-    # 不需要同步其他的Eureka Server节点的数据，故而设为false。
+    # 不需要同步其他的Eureka Server节点的数据，故而设为false 也即常说的自我保护。
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
