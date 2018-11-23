@@ -26,6 +26,7 @@ public class UserController {
   private DiscoveryClient discoveryClient;
   @Autowired
   private UserRepository userRepository;
+  //注意此时启动要么指定 --config.producer.instance=2 要么配置文件配置一下 否则启动失败
   @Value("${config.producer.instance}")
   private int instance;
   /**
@@ -50,7 +51,7 @@ public class UserController {
     return this.discoveryClient.getInstances("provider-user").get(0);
   }
 
-  @RequestMapping("/")
+  @RequestMapping("/say")
   public String hello(String word){
     return  "["+instance+"]"+" welcome to user service "+word+new Date();
   }

@@ -27,3 +27,5 @@ eureka:
   instance:
     preferIpAddress: true
 
+
+

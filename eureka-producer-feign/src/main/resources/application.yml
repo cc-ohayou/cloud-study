@@ -1,15 +1,8 @@
-server:
-  port: 1001
+
 spring:
   application:
     name: provider-user-feign    # 项目名称尽量用小写
-logging:
-  level:
-    root: INFO
-    org.hibernate: INFO
-    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
-    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
-    com.itmuch.youran.persistence: ERROR
+
 eureka:
   client:
     serviceUrl:
@@ -17,4 +10,8 @@ eureka:
       defaultZone: http://discovery:8761/eureka/   # 指定注册中心的地址
   instance:
     preferIpAddress: true
-
+server:
+  port: 1001
+feign:
+  hystrix:
+    enabled: true
